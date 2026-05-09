@@ -1,0 +1,141 @@
+\section{Self-Consistent Fixed Point}
+
+\subsection{Effective bridge capacity}
+
+The previous sections established the base electromagnetic bridge count
+\[
+B=137
+\]
+and the net first-order feedback burden
+\[
+K=\frac{74}{15}.
+\]
+The inverse compact-fiber electromagnetic bridge coupling is denoted
+\[
+x=\alpha_F^{-1}.
+\]
+The quantity \(x\) is not a primitive carrier cardinality. The primitive material carrier has
+\[
+|F|=128,
+\]
+and the base bridge count is
+\[
+B=128+9=137.
+\]
+The effective bridge capacity \(x\) is obtained only after cover-mediated feedback is admitted and distributed over the same bridge capacity that it modifies.
+
+The central point is that \(K\) is not a new carrier pool and not a direct count to be added to \(B\). It is a feedback burden delivered into the electromagnetic bridge. The appropriate first-order equation is therefore self-consistent:
+\[
+x=B+\frac{K}{x}.
+\]
+
+\subsection{\texorpdfstring{Why the feedback term is \(K/x\)}{Why the feedback term is K/x}}
+
+If the feedback burden \(K\) were an independent carrier pool, the first-order equation would be
+\[
+x=B+K.
+\]
+That is not its role. The burden is delivered into the existing bridge and distributed over the effective bridge capacity. A burden distributed over \(N\) effective channels contributes as
+\[
+\frac{K}{N}.
+\]
+
+If the bridge capacity were fixed at its uncorrected base value \(B\), the one-pass perturbative correction would be
+\[
+x\approx B+\frac{K}{B}.
+\]
+But the feedback changes the bridge capacity that appears in the denominator. The denominator must therefore be the final effective capacity
+\[
+x,
+\]
+not the uncorrected base count
+\[
+B.
+\]
+Thus the first-order feedback contribution is
+\[
+\frac{K}{x}.
+\]
+
+\subsection{First-order bridge equation}
+
+The first-order compact-fiber bridge equation is
+\[
+\boxed{
+x=B+\frac{K}{x}.
+}
+\]
+Substituting
+\[
+B=137,
+\qquad
+K=\frac{74}{15},
+\]
+gives
+\[
+x=137+\frac{74}{15x}.
+\]
+Multiplying by \(x\),
+\[
+x^2=137x+\frac{74}{15}.
+\]
+Therefore
+\[
+\boxed{
+x^2-137x-\frac{74}{15}=0.
+}
+\]
+This is the first-order fixed-point equation for the effective electromagnetic bridge capacity.
+
+\subsection{Positive root}
+
+The positive root is
+\[
+x_{\rm quad}
+=
+\frac{137+\sqrt{137^2+4(74/15)}}{2}.
+\]
+Since
+\[
+4\left(\frac{74}{15}\right)
+=
+\frac{296}{15},
+\]
+this may also be written as
+\[
+x_{\rm quad}
+=
+\frac{137+\sqrt{137^2+296/15}}{2}.
+\]
+Numerically,
+\[
+\boxed{
+x_{\rm quad}=137.03600027236\ldots.
+}
+\]
+The corresponding first-order compact-fiber bridge coupling is
+\[
+\alpha_{F,\rm quad}
+=
+\frac{1}{x_{\rm quad}}.
+\]
+
+\subsection{First-order accuracy and residual scale}
+
+The first-order result is structurally nontrivial. It fixes the inverse electromagnetic bridge coupling close to the observed low-energy inverse fine-structure constant scale without using the measured value of \(\alpha\) as an input.
+
+It is not, however, the final compact-fiber prediction. At modern precision, the first-order value remains high by approximately
+\[
+8\text{ ppb}
+\]
+relative to the quoted low-energy inverse fine-structure constant. The remaining discrepancy motivates the closed-return analysis of the admitted first-order feedback burden.
+
+\subsection{Independence from the closed-return correction}
+
+The first-order equation
+\[
+x=B+\frac{K}{x}
+\]
+depends only on the self-consistent transport-sharing rule: a feedback burden delivered into an effective bridge capacity is distributed over the final capacity that it helps determine.
+
+Under that rule, the first-order result follows algebraically. It does not depend on the second-order closed-return correction. If the closed-return term were revised, the first-order compact-fiber bridge lemma would remain intact.

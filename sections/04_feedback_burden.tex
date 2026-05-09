@@ -1,0 +1,291 @@
+\section{Cover-Mediated Feedback Burden}
+
+\subsection{Feedback burden from cover-mediated readout}
+
+The base bridge count
+\[
+B=137
+\]
+is not the final effective bridge capacity. The compact fiber also
+supplies cover-mediated feedback from the paired magnetic sector into
+the electromagnetic bridge.
+
+The paired magnetic sector is
+\[
+Z_4\times Z_4,
+\]
+and the electric-cover sector is
+\[
+Z_8.
+\]
+Since
+\[
+N_m\mid N_e,
+\qquad
+8=2\cdot4,
+\]
+the compact fiber contains the canonical electric-cover / magnetic-base
+quotient
+\[
+\pi:Z_8\to Z_4.
+\]
+This quotient is derived from the sector-capacity relation and is not
+independent bridge data.
+
+The target observable
+\[
+\alpha_F
+\]
+is a carrier-level electromagnetic bridge coupling. Paired magnetic
+feedback therefore does not enter as a purely magnetic-internal quantity;
+it is read through the electric-cover / magnetic-base interface.
+
+\subsection{Canonical cover-interface readout routes}
+
+The base-cover feedback channel has two mechanism-distinct scalar
+readout resolutions. The first is direct electric-cover resolution,
+\[
+\frac{1}{N_e}.
+\]
+The second is fully resolved joint magnetic/electric resolution,
+\[
+\frac{1}{N_mN_e}.
+\]
+These are not sequential filters applied to the same event. Sequential
+transport would multiply capacities; mechanism-distinct scalar access
+contributions to a single feedback burden add before the burden is
+distributed over the final bridge capacity.
+
+Thus the gross cover-mediated readout is
+\[
+\frac1{N_e}+\frac1{N_mN_e}.
+\]
+At common denominator \(N_mN_e\),
+\[
+\frac1{N_e}+\frac1{N_mN_e}
+=
+\frac{N_m}{N_mN_e}
++
+\frac1{N_mN_e}
+=
+\frac{N_m+1}{N_mN_e}.
+\]
+The numerator
+\[
+N_m+1
+\]
+is the intrinsic mechanism count of the base-cover feedback channel.
+For
+\[
+N_m=4,
+\]
+this gives
+\[
+N_m+1=5.
+\]
+Therefore the gross feedback burden is
+\[
+\boxed{
+M_{\rm fb}=5.
+}
+\]
+
+The local product-fiber denominator
+\[
+N_mN_e
+\]
+is appropriate when the target observable is resolved at product-fiber
+scale. That is not the normalization used for the alpha bridge equation.
+The target observable is the effective bridge capacity
+\[
+x=\alpha_F^{-1},
+\]
+so the bridge share is
+\[
+\frac1x.
+\]
+Reusing the local denominator \(N_mN_e\) and then dividing again by
+\(x\) would double-count target normalization. For the alpha bridge, the
+feedback contribution has the form
+\[
+\frac{K}{x},
+\]
+not
+\[
+\frac{K}{N_mN_e\,x}.
+\]
+Thus the intrinsic feedback numerator \(N_m+1\) is carried forward as
+the gross feedback burden.
+
+\subsection{Scalar self-resolution cost}
+
+The paired magnetic contrast space is
+\[
+G=Z_4\times Z_4,
+\]
+with
+\[
+|G|=N_m^2=16.
+\]
+The datum state
+\[
+(0,0)
+\]
+carries no paired magnetic contrast and is excluded from the active
+contrast support. Define
+\[
+G^\ast=G\setminus\{(0,0)\}.
+\]
+Then
+\[
+|G^\ast|=N_m^2-1.
+\]
+For \(N_m=4\),
+\[
+|G^\ast|=16-1=15.
+\]
+
+The electromagnetic bridge coupling is a scalar carrier-level observable.
+It does not resolve the individual labels of \(G^\ast\). The unresolved
+non-datum contrast support therefore contributes one scalar
+self-resolution cost distributed over the active contrast space:
+\[
+A_{\rm self}
+=
+\frac1{|G^\ast|}
+=
+\frac1{N_m^2-1}.
+\]
+For \(N_m=4\),
+\[
+A_{\rm self}
+=
+\frac1{15}.
+\]
+This is a self-resolution cost, not an additional feedback source and
+not an attenuation factor applied independently to every feedback event.
+
+\subsection{Closure-budget accounting}
+
+The closure budget contains the gross generated feedback burden
+\[
+M_{\rm fb}=N_m+1
+\]
+and the consumed self-resolution cost
+\[
+A_{\rm self}=\frac1{N_m^2-1}.
+\]
+The source-level budget relation is
+\[
+\text{gross generated feedback}
+=
+\text{delivered feedback}
++
+\text{consumed self-resolution cost}.
+\]
+Equivalently,
+\[
+\text{delivered feedback}
+=
+\text{gross generated feedback}
+-
+\text{consumed self-resolution cost}.
+\]
+Thus
+\[
+K=M_{\rm fb}-A_{\rm self}.
+\]
+
+This excludes a multiplicative form such as
+\[
+M_{\rm fb}(1-A_{\rm self})
+\]
+in the present role assignment. A multiplicative form would treat
+\(A_{\rm self}\) as an attenuation applied to each feedback event. Here
+\(A_{\rm self}\) is an additive cost consumed from the same closure
+budget before the net burden is delivered to the bridge.
+
+Substituting the compact-fiber values,
+\[
+K
+=
+(N_m+1)
+-
+\frac1{N_m^2-1}.
+\]
+For \(N_m=4\),
+\[
+K
+=
+5-\frac1{15}
+=
+\frac{74}{15}.
+\]
+Therefore the net first-order feedback burden is
+\[
+\boxed{
+K=\frac{74}{15}.
+}
+\]
+
+\subsection{\texorpdfstring{Role of \(K\) in the bridge equation}{Role of K in the bridge equation}}
+
+The quantity
+\[
+K=\frac{74}{15}
+\]
+is not a direct channel count to be added to \(B\). It is a feedback
+burden delivered into the effective bridge capacity. Therefore it appears
+as
+\[
+\frac{K}{x}
+\]
+in the self-consistent bridge equation, not as
+\[
+K.
+\]
+The first-order equation is
+\[
+x=B+\frac{K}{x},
+\]
+not
+\[
+x=B+K,
+\]
+and not merely a one-pass correction
+\[
+x=B+\frac{K}{B}.
+\]
+The denominator is the final effective bridge capacity \(x\), because
+the feedback modifies the same bridge capacity over which it is
+distributed.
+
+The feedback-burden dependency structure is therefore:
+\[
+\text{cover-mediated gross burden}
+\quad
+N_m+1=5,
+\]
+\[
+\text{active non-datum contrast support}
+\quad
+N_m^2-1=15,
+\]
+\[
+\text{scalar self-resolution cost}
+\quad
+\frac1{N_m^2-1}=\frac1{15},
+\]
+\[
+\text{net delivered feedback}
+\quad
+K=(N_m+1)-\frac1{N_m^2-1}.
+\]
+Thus
+\[
+\boxed{
+K=\frac{74}{15}
+}
+\]
+is a structural feedback burden determined by the compact-fiber closure
+budget, not a fitted constant.

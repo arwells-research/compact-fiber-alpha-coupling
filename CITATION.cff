@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it using the metadata below."
+title: "A Compact-Fiber Structural Prediction of the Low-Energy Electromagnetic Coupling"
+authors:
+  - family-names: "Wells"
+    given-names: "A. R."
+    orcid: "https://orcid.org/0009-0003-1053-9421"
+affiliation: "Dual-Frame Research Group"
+date-released: 2026
+license: "CC-BY-4.0"
+doi: "10.5281/zenodo.20100799"
+repository-code: "https://github.com/arwells-research/compact-fiber-alpha-coupling"
+keywords:
+  - compact fiber
+  - fine-structure constant
+  - electromagnetic coupling
+  - theoretical physics
+  - fundamental constants
+  - Reciprocal System
+  

@@ -1,0 +1,284 @@
+\section{Closed-Return Correction}
+
+\subsection{Closed-return structure}
+
+The first-order bridge equation is
+\[
+x=B+\frac{K}{x}.
+\]
+Its positive root is
+\[
+x_{\rm quad}=137.03600027236\ldots.
+\]
+This first-order result is structurally constrained but not sufficient at
+modern comparison precision. The admitted cover-mediated feedback has a
+first closed return on the scalar two-node bridge graph. That return
+supplies the second-order correction
+\[
+\boxed{
+\Delta x_{\rm 2nd}
+=
+-\frac{K N_m}{(N_e-1)x^3}.
+}
+\]
+
+\subsection{The two-node feedback graph}
+
+The relevant feedback graph contains two transport nodes:
+\[
+\text{EM bridge}
+\]
+and
+\[
+\text{paired magnetic source}.
+\]
+The cover map
+\[
+\pi:Z_8\to Z_4
+\]
+is channel-internal, not an independent third transport node. A structure
+would qualify as an independent transport node only if it had independent
+state space, independent transport capacity, sequential multiplicative
+factorization, and independent normalization.
+
+The cover map \(\pi\) fails these criteria. It is a morphism, not a
+carrier object with its own independent position space. Its kernel is
+internal to \(Z_8\), and elements in a fiber are co-accessed by
+base-level operations factoring through \(\pi\). Additive cover-to-base
+readout therefore has the signature of mechanism-distinct routes through
+a channel, not sequential traversal through a separate transport node.
+
+Thus the active scalar feedback graph is
+\[
+\text{EM bridge}
+\longleftrightarrow
+\text{paired magnetic source}.
+\]
+
+\subsection{First closed return}
+
+The first-order term
+\[
++\frac{K}{x}
+\]
+is an outward cover-mediated feedback contribution from the paired
+magnetic source into the electromagnetic bridge. The first closed return
+is the shortest circuit that leaves the bridge and returns to it through
+the paired magnetic source:
+\[
+\text{EM bridge}
+\rightarrow
+\text{paired magnetic source}
+\rightarrow
+\text{EM bridge}.
+\]
+This return circuit requires two additional bridge traversals beyond the
+first-order feedback term. Each traversal is diluted over the effective
+bridge capacity \(x\), so the two additional traversals contribute
+\[
+\frac1{x^2}.
+\]
+The return therefore has the scale
+\[
+\frac{K}{x}\cdot\frac1{x^2}
+=
+\frac{K}{x^3}.
+\]
+
+\subsection{Return coefficient}
+
+The return coefficient is
+\[
+\frac{N_m}{N_e-1}.
+\]
+The numerator \(N_m\) is the magnetic reception capacity of the paired
+magnetic side. The denominator \(N_e-1\) is the electric-cover complement
+capacity remaining after the first-order source activation.
+
+This denominator follows from co-access plus transport accounting. A
+base-level activation through
+\[
+\pi:Z_8\to Z_4
+\]
+co-accesses the full fiber
+\[
+\pi^{-1}(m),
+\]
+but it does so as one carrier-level transport event, not as independent
+electric activations for each element of the fiber. Therefore the
+first-order event removes one transport-event unit from the electric-cover
+transport capacity, leaving
+\[
+N_e-1.
+\]
+It does not remove \(d\) independent electric sites, so the denominator
+is not \(N_e-d\). It is also not \(N_e\), because the first-order source
+activation has already committed one electric-cover transport event
+before the return is formed.
+
+For the compact fiber,
+\[
+N_m=4,
+\qquad
+N_e=8,
+\]
+and therefore
+\[
+\frac{N_m}{N_e-1}
+=
+\frac47.
+\]
+
+\subsection{Negative sign}
+
+The sign of the closed return is fixed by its role as derivative
+self-response of the first-order feedback term. The first-order feedback
+contribution is
+\[
+g(x)=\frac{K}{x}.
+\]
+Since
+\[
+K>0,
+\qquad
+x>0,
+\]
+we have
+\[
+g'(x)=-\frac{K}{x^2}<0.
+\]
+Thus, if the closed return is the derivative self-response of the
+first-order feedback to the bridge capacity that feedback modifies, it
+must reduce the outward first-order contribution. The path factors
+\[
+\frac1{x^2}
+\]
+and
+\[
+\frac{N_m}{N_e-1}
+\]
+are positive. They affect the magnitude but not the sign. Therefore
+\[
+\Delta x_{\rm 2nd}<0.
+\]
+
+\subsection{Second-order correction}
+
+Combining the first-order admitted feedback, the two additional bridge
+traversals, the return coefficient, and the negative derivative
+self-response sign gives
+\[
+\Delta x_{\rm 2nd}
+=
+-\frac{K}{x}
+\cdot
+\frac1{x^2}
+\cdot
+\frac{N_m}{N_e-1}.
+\]
+Therefore
+\[
+\boxed{
+\Delta x_{\rm 2nd}
+=
+-\frac{K N_m}{(N_e-1)x^3}.
+}
+\]
+
+For the compact-fiber values,
+\[
+K=\frac{74}{15},
+\qquad
+N_m=4,
+\qquad
+N_e=8,
+\]
+the coefficient is
+\[
+\frac{K N_m}{N_e-1}
+=
+\frac{(74/15)\cdot4}{7}
+=
+\frac{296}{105}.
+\]
+Thus the second-order correction is
+\[
+\boxed{
+\Delta x_{\rm 2nd}
+=
+-\frac{296}{105x^3}.
+}
+\]
+
+The measured fine-structure constant is not used to set
+\[
+\frac47
+\]
+or any other coefficient in the corrected fixed-point equation.
+
+\subsection{Corrected fixed point}
+
+Adding the closed-return correction to the first-order equation gives
+\[
+x
+=
+B+\frac{K}{x}
+-
+\frac{K N_m}{(N_e-1)x^3}.
+\]
+Substituting
+\[
+B=137,
+\qquad
+K=\frac{74}{15},
+\qquad
+N_m=4,
+\qquad
+N_e=8,
+\]
+we obtain
+\[
+x
+=
+137+\frac{74}{15x}
+-
+\frac{296}{105x^3}.
+\]
+This is the second-order compact-fiber bridge equation.
+
+\subsection{Status of the correction}
+
+The admitted second-order correction is conditionally unique within the
+current scalar two-node bridge graph. At order \(O(x^{-3})\), possible
+sources would include a second independent first-order feedback source,
+a new carrier pool, a direct cubic mechanism, base-feedback interference,
+a non-scalar correction, or higher-order leakage. Under the current scalar
+two-node graph, none of these alternatives is admitted: the closed return
+of the already-admitted first-order feedback is the only same-order scalar
+closed-return correction.
+
+This is a conditional uniqueness claim. It is relative to the current
+scalar bridge graph and the stated transport-node, source/complement,
+derivative self-response, and scalar-readout rules. Future radiation-side
+feedback mechanisms would require re-audit, but no such mechanism is
+admitted in the present scalar bridge graph.
+
+If repeated closed returns are admitted, each additional round trip is
+suppressed by at least
+\[
+\frac{C}{x^2},
+\qquad
+C=\frac{N_m}{N_e-1}=\frac47.
+\]
+For
+\[
+x\approx137.036,
+\]
+this suppression factor is approximately
+\[
+3.0\times10^{-5}.
+\]
+Thus higher-order repeated returns, if present, are operationally small
+at the current comparison scale. A complete all-orders return theorem
+remains open; the present paper uses only the first closed-return
+correction.

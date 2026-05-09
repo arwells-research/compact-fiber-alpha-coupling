@@ -1,0 +1,83 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{amsmath,amssymb,amsthm,mathtools}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{tabularx}
+\usepackage{hyperref}
+\usepackage[nameinlink,noabbrev]{cleveref}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{xcolor}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  citecolor=blue,
+  urlcolor=blue,
+  pdftitle={A Compact-Fiber Structural Prediction of the Low-Energy Electromagnetic Coupling},
+  pdfauthor={A. R. Wells}
+}
+
+\title{A Compact-Fiber Structural Prediction of the Low-Energy Electromagnetic Coupling}
+
+\author{A.\ R.\ Wells\\
+Dual-Frame Research Group}
+
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+We derive a compact-fiber structural prediction for a low-energy
+electromagnetic bridge coupling. The compact-fiber carrier
+\(F=Z_4\times Z_4\times Z_8\) supplies \(|F|=128\), and the
+radiative/vibrational bridge-placement readout supplies
+\(|V_{\rm rad}^{\rm bridge}|=3^2=9\), giving the base bridge count
+\(B=137\). Cover-mediated feedback gives \(K=74/15\), and the first
+closed return yields
+\[
+x^4-137x^3-\frac{74}{15}x^2+\frac{296}{105}=0.
+\]
+The positive root is
+\[
+x_{\rm fiber}=137.0359991771859\ldots,
+\qquad
+\alpha_F=1/x_{\rm fiber}.
+\]
+No measured value of \(\alpha\) is used as an algebraic input, and no
+continuously adjusted coefficient appears in the bridge equation. The
+identification \(\alpha_F=\alpha_{\rm low-energy}\) is made by physical
+role: leading atomic binding reads the material/radiative bridge through
+two vertices and therefore carries an \(\alpha_F^2\) dependence. The
+numerical comparison with the empirical fine-structure constant is a
+consistency check, not an error-budget closure; route-specific
+metrological extraction remains downstream.
+\end{abstract}
+
+\tableofcontents
+
+\input{sections/01_introduction}
+\input{sections/02_compact_fiber_bridge}
+\input{sections/03_base_bridge_count}
+\input{sections/04_feedback_burden}
+\input{sections/05_self_consistent_fixed_point}
+\input{sections/06_closed_return_correction}
+\input{sections/07_numerical_prediction}
+\input{sections/08_low_energy_role_identification}
+\input{sections/09_empirical_route_correspondence}
+\input{sections/10_scope_limitations_and_falsifiability}
+\input{sections/11_conclusion}
+
+\bibliographystyle{plain}
+\bibliography{sections/references}
+
+\end{document}
