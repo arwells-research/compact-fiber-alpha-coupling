@@ -1,7 +1,6 @@
-# Compact-Fiber Alpha Coupling Paper
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20100799.svg)](https://doi.org/10.5281/zenodo.20100799)
+# A Compact-Fiber Structural Prediction of the Low-Energy Electromagnetic Coupling
 
-**Working title:** A Compact-Fiber Structural Prediction of the Low-Energy Electromagnetic Coupling
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20100799.svg)](https://doi.org/10.5281/zenodo.20100799)
 
 **Author:** A. R. Wells  
 **Affiliation:** Dual-Frame Research Group  
@@ -11,64 +10,47 @@
 
 ---
 
-## Purpose
+## Overview
 
-This repository contains the draft paper developing the compact-fiber structural prediction of the low-energy electromagnetic bridge coupling,
+This repository contains the paper and LaTeX source for:
 
-\[
-\alpha_F^{-1}=137.0359991771859\ldots .
-\]
+**_A Compact-Fiber Structural Prediction of the Low-Energy Electromagnetic Coupling_**
 
-The paper extracts the alpha theorem-chain from the broader hydrogen and normalization-constants investigation. It is focused on the structural coupling derivation, its low-energy electromagnetic role identification, and its correspondence with legacy empirical alpha extraction routes.
-
----
-
-## Claim boundary
-
-The paper claims a conditional two-stage structural derivation of a compact-fiber electromagnetic bridge coupling,
+The paper develops a compact-fiber structural prediction for the low-energy electromagnetic bridge coupling. The compact-fiber carrier, radiative/vibrational bridge-placement readout, cover-mediated feedback, self-consistent transport sharing, and first closed return yield a quartic equation whose positive root is
 
 \[
-\alpha_F=\frac{1}{x_{\rm fiber}},
+x_{\rm fiber}=137.0359991771859\ldots
 \]
 
-where \(x_{\rm fiber}\) is the positive root of
+so that
 
 \[
-x^4-137x^3-\frac{74}{15}x^2+\frac{296}{105}=0.
+\alpha_F=\frac{1}{x_{\rm fiber}}.
 \]
 
-It does not claim a completed route-by-route derivation of all CODATA or metrological alpha extraction methods.
+No measured value of the fine-structure constant is used as an algebraic input, and no continuously adjusted coefficient appears in the bridge equation.
 
-Route-specific recoil, \(g-2\), electrical-standard, and dimensional-anchor derivations remain downstream work.
+The identification of \(\alpha_F\) with the low-energy electromagnetic coupling is made by physical role: leading atomic binding reads the material/radiative bridge through two vertices and therefore carries an \(\alpha_F^2\) dependence, matching the role of \(\alpha^2\) in the Hartree/Rydberg scale.
 
----
+## Scope
 
-## Source investigation repo
+The numerical comparison with the empirical fine-structure constant is presented as a consistency check, not as an error-budget closure. Route-specific metrological extraction, QED vertex expansion, electrical-standard readout, and broader second-observable closure remain downstream work.
 
-Primary source material comes from:
+## Files
 
-```text
-~/projects/compact-fiber-hydrogen-investigation/notes/normalization_constants/alpha/
-```
+    compact_fiber_alpha.pdf        Final paper PDF
+    compact_fiber_alpha.tex        Main LaTeX source
+    sections/                      Paper sections and bibliography
+    README.md                      Repository overview
+    CITATION.cff                   Citation metadata
+    LICENSE                        CC BY 4.0 license notice
 
-The controlling source notes are listed in:
+## Citation
 
-```text
-notes/source_material_index.md
-```
+Use the Zenodo DOI:
 
----
+    10.5281/zenodo.20100799
 
-## Draft structure
+## License
 
-Paper sections are maintained as separate markdown files under:
-
-```text
-sections/
-```
-
-The working outline is:
-
-```text
-OUTLINE.md
-```
+This work is released under CC BY 4.0. Reuse is permitted with attribution.
